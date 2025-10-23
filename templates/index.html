@@ -2,17 +2,40 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clique</title>
-    <!-- Carregando CSS externo -->
+    <title>Meu Site com Particles</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <!-- Div container para as partículas -->
     <div id="particles-js"></div>
 
-    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <!-- Seu conteúdo normal da página aqui -->
+    <div class="content">
+        <h1>Meu Conteúdo</h1>
+        <p>Este texto aparecerá sobre o fundo animado.</p>
+    </div>
 
-    <!-- Carregando JavaScript externo -->
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Script do Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Opção 1: Carregar configuração de um arquivo JSON
+        particlesJS.load('particles-js', "{{ url_for('static', filename='particles.json') }}", function() {
+            console.log('particles.json loaded');
+        });
+
+        // Opção 2: Configuração direta no JavaScript (como no CodePen)
+        /*
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                // ... mais configurações do site do particles.js
+            },
+            interactivity: {
+                // ... configurações de interatividade
+            }
+        });
+        */
+    </script>
 </body>
 </html>
