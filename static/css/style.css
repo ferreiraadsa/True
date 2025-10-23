@@ -1,72 +1,18 @@
-/* light mode */
-:root {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-
-  /* Cores semânticas */
-  --primary: #10b981; /* verde esmeralda */
-  --secondary: #6366f1; /* azul índigo */
-  --accent: #8b5cf6; /* Roxo vibrante */
-
-  /* Estados e feedback */
-  --success: #10b981; /* verde esmeralda */
-  --warning: #f59e0b; /* amarelo âmbar */
-  --error: #ef4444; /* vermelho carmesim */
-  --info: #6366f1; /* azul índigo */
-
-  /* Superficies e backgrounds */
-  --bg-primary: #f8fafc; /* cinza muito claro */
-  --bg-secondary: #ffffff; /* Branco puro */
-  --bg-accent: #f1f5f9; /* cinza azulado claro */
-
-  /* Bordas e dividers */
-  --border-light: #e2e8f0; /* cinza claro */
-  --border-strong: #94a3b8; /* cinza escuro */
-
-  /* Tipografia */
-  --text-primary: #1e293b; /* azul escuro */
-  --text-secondary: #64748b; /* azul acinzentado */
-
-  --special-text: #1e293b; /* azul escuro */
+/* Estilo para o container das partículas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Cor de fundo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: linear-gradient(90deg, var(--primary), var(--special-text));
-    margin: 0;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-h1 {
-    color: #333;
-    text-align: center;
-}
-
-button {
-    background-color: #007bff;
+/* Para que seu conteúdo fique sobre as partículas */
+.content {
+    position: relative;
+    z-index: 1;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#mensagem {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #28a745;
+    padding: 20px;
 }
