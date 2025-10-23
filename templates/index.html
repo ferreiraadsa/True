@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu App Flask</title>
+    <!-- Carregando CSS externo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Olá, Flask!</h1>
+        <p>Este é um exemplo simples de aplicação Flask.</p>
+        <button id="meuBotao">Clique Aqui!</button>
+        <p id="mensagem"></p>
+    </div>
 
+    <!-- Carregando JavaScript externo -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
