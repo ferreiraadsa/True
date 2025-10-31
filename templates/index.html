@@ -19,17 +19,8 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
 
-        // Opção 2: Configuração direta no JavaScript (como no CodePen)
-        
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#ffffff" },
-                // ... mais configurações do site do particles.js
-            },
-            interactivity: {
-                // ... configurações de interatividade
-            }
+        particlesJS.load('particles-js', "{{ url_for('static', filename='particles.json') }}", function() {
+            console.log('particles.json loaded');
         });
         
     </script>
