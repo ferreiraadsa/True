@@ -15,4 +15,5 @@
     height:70%;
     aspect-ratio: 9/16;
     background: rgba(200, 200, 200, 0,5);
+    border: 3px dashed blue;
 }
