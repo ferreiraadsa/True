@@ -10,9 +10,9 @@
 }
 
 /* Para que seu conteúdo fique sobre as partículas */
-.content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    padding: 20px;
+.main {
+    width: auto;
+    height:70%;
+    aspect-ratio: 9/16;
+    background: rgba(200, 200, 200, 0,5);
 }
