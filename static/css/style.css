@@ -16,4 +16,6 @@
     aspect-ratio: 9/16;
     background: rgba(200, 200, 200, 0,5);
     border: 3px dashed blue;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px red;
 }
